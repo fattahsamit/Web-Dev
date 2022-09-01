@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#head {
+  background-color: purple;
+  color: #e9ecef;
+  border-bottom: 8px solid rgb(79, 36, 97);
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+#para {
+  font-size: 1.3rem;
+}
+
+.btn-success {
+  color: white;
+  background-color: green;
+}
+
+#jbt {
+  margin-top: 70px;
+}
+
+/*  jumbotron component is removed in BSv5 */
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
