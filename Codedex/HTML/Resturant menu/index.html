@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.ibb.co.com/Z1Hh3CV/krusty-1.png"
+    />
+    <title>Krusty Krab</title>
+    <style>
+      body {
+        font-family: "Bubblegum Sans", sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        color: #ff4500;
+        align-items: center;
+      }
+      nav img {
+        width: 100px;
+      }
+      nav div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        font-size: larger;
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      section {
+        width: 70%;
+        margin: 80px auto;
+        font-size: x-large;
+        text-align: center;
+      }
+      hr {
+        width: 60%;
+      }
+      #menu-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        gap: 20px;
+        font-size: medium;
+      }
+      .menu-card {
+        text-align: left;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: medium;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .menu-image {
+        text-align: center;
+      }
+      .menu-image img {
+        border-radius: 200px;
+      }
+      #order-form {
+        width: 30%;
+        margin: auto;
+      }
+      #order-form form {
+        text-align: start;
+      }
+      #order-form form input {
+        padding: 10px;
+        border: 1px dotted #333;
+        border-radius: 8px;
+      }
+      fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      #sides {
+        display: flex;
+        gap: 15px;
+      }
+      input[type="checkbox"] {
+        transform: scale(1.5);
+      }
+      textarea {
+        padding: 10px;
+        font-size: large;
+      }
+      #submit {
+        background-color: #ff4500;
+        width: 100%;
+        font-size: large;
+        font-weight: bold;
+      }
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 5px;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div id="brand-logo">
+          <img
+            src="https://i.ibb.co.com/Z1Hh3CV/krusty-1.png"
+            alt="Krusty Krab Logo"
+          />
+          <h1><a href=".">The Krusty Krab</a></h1>
+        </div>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order-form">Order</a></li>
+        </ul>
+      </nav>
+      <!-- Banner -->
+      <section id="banner">
+        <article>
+          The Krusty Krab 🦀 is a fictional fast food restaurant in the American
+          animated television series SpongeBob SquarePants. In the television
+          show the restaurant is famous for its signature burger, the Krabby
+          Patty 🍔, the formula to which is a closely guarded trade secret.
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <!-- Menu -->
+      <section id="menu">
+        <h2>🍽️ Menu</h2>
+        <div id="menu-card-container">
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://aseatenontv.wordpress.com/wp-content/uploads/2013/03/krabby-patty-2.jpg"
+                alt="Krabby patty"
+                width="200"
+                height="200"
+              />
+            </div>
+            <h3>#1 Krabby Patty</h3>
+            <p>
+              The iconic burger, made with the secret formula. Comes with
+              lettuce, tomato, and a fresh seaweed bun.<br /><br />
+              <i>$5.99</i>
+            </p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://static.wikia.nocookie.net/spongebob/images/e/ec/Jellyfish_Jam_009.png"
+                alt="Jellyfish Jelly Toast"
+                width="200"
+                height="200"
+              />
+            </div>
+            <h3>#2 Jellyfish Jelly Toast</h3>
+            <p>
+              Grilled toast topped with fresh Jellyfish Jelly, a sweet treat.<br /><br />
+              <i>$2.99</i>
+            </p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image">
+              <img
+                src="https://static.wikia.nocookie.net/spongebob/images/e/e2/Chum_Bucket_chum_stock_art.png"
+                alt="Chum Bucket Special"
+                width="200"
+                height="200"
+              />
+            </div>
+            <h3>#3 Chum Bucket Special</h3>
+            <p>
+              A mystery dish from the competition, not for the faint of
+              heart.<br /><br />
+              <i>$3.49</i>
+            </p>
+          </article>
+        </div>
+      </section>
+      <hr />
+      <!-- Orders -->
+      <section id="order-form">
+        <h2>🛒 Place Your Order</h2>
+        <form action="">
+          <label for="menu-number">Menu: </label
+          ><input
+            type="number"
+            name="menu-number"
+            id="menu-number"
+            placeholder="Enter Menu number"
+            minlength="0"
+            maxlength="3"
+            required
+          /><br /><br />
+          <!-- Sides -->
+          <fieldset>
+            <legend>Sides and add-ons:</legend>
+            <div id="sides">
+              <input type="checkbox" id="fries" name="fries" value="fries" />
+              <label for="fries">Fries</label><br />
+
+              <input type="checkbox" id="cheese" name="cheese" value="cheese" />
+              <label for="cheese">Cheese</label><br />
+
+              <input type="checkbox" id="salad" name="salad" value="salad" />
+              <label for="salad">Seaweed Salad</label><br />
+            </div>
+          </fieldset>
+          <br />
+          <!-- Speacial Requests -->
+          <textarea
+            name="special"
+            id="special"
+            cols="47"
+            rows="3"
+            placeholder="Special requests"
+          ></textarea
+          ><br />
+          <input type="submit" id="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Made with love ❤️ by wildcard</p>
+    </footer>
+  </body>
+</html>
