@@ -81,6 +81,9 @@
       }
       .menu-card {
         background-color: #f7fbff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: left;
         border-radius: 10px;
         padding: 10px 20px;
@@ -92,6 +95,9 @@
       }
       .menu-image img {
         border-radius: 200px;
+      }
+      .price {
+        color: #ff4500;
       }
       #order-form {
         width: 30%;
@@ -201,7 +207,7 @@
             <p>
               The iconic burger, made with the secret formula. Comes with
               lettuce, tomato, and a fresh seaweed bun.<br /><br />
-              <i>$5.99</i>
+              <span class="price"><i>$5.99</i></span>
             </p>
           </article>
           <article class="menu-card">
@@ -216,7 +222,7 @@
             <h3>#2 Jellyfish Jelly Toast</h3>
             <p>
               Grilled toast topped with fresh Jellyfish Jelly, a sweet treat.<br /><br />
-              <i>$2.99</i>
+              <span class="price"><i>$2.99</i></span>
             </p>
           </article>
           <article class="menu-card">
@@ -232,7 +238,7 @@
             <p>
               A mystery dish from the competition, not for the faint of
               heart.<br /><br />
-              <i>$3.49</i>
+              <span class="price"><i>$3.49</i></span>
             </p>
           </article>
         </div>
@@ -258,8 +264,13 @@
             <div id="sides">
               <input type="checkbox" id="fries" name="fries" value="fries" />
               <label for="fries">Fries</label>
-              <input type="checkbox" id="cheese" name="cheese" value="cheese" />
-              <label for="cheese">Cheese</label>
+              <input
+                type="checkbox"
+                id="pickles"
+                name="pickles"
+                value="pickles"
+              />
+              <label for="pickles">Pickles</label>
               <input type="checkbox" id="salad" name="salad" value="salad" />
               <label for="salad">Seaweed Salad</label>
             </div>
