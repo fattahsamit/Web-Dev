@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Krusty Krab - Home of the famous Krabby Patty! Explore our menu and place your order today."
+    />
     <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
@@ -60,7 +64,7 @@
       #menu-card-container {
         display: grid;
         grid-template-columns: repeat(3, minmax(250px, 1fr));
-        gap: 20px;
+        grid-gap: 20px;
         font-size: medium;
       }
       .menu-card {
@@ -103,6 +107,7 @@
       textarea {
         padding: 10px;
         font-size: large;
+        width: 95%;
       }
       #submit {
         background-color: #ff4500;
@@ -115,6 +120,16 @@
         margin-top: 50px;
         padding: 5px;
         font-size: larger;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        #menu-card-container {
+          grid-template-columns: 1fr;
+        }
+        #order-form {
+          width: 80%;
+        }
       }
     </style>
   </head>
@@ -219,13 +234,11 @@
             <legend>Sides and add-ons:</legend>
             <div id="sides">
               <input type="checkbox" id="fries" name="fries" value="fries" />
-              <label for="fries">Fries</label><br />
-
+              <label for="fries">Fries</label>
               <input type="checkbox" id="cheese" name="cheese" value="cheese" />
-              <label for="cheese">Cheese</label><br />
-
+              <label for="cheese">Cheese</label>
               <input type="checkbox" id="salad" name="salad" value="salad" />
-              <label for="salad">Seaweed Salad</label><br />
+              <label for="salad">Seaweed Salad</label>
             </div>
           </fieldset>
           <br />
@@ -233,12 +246,17 @@
           <textarea
             name="special"
             id="special"
-            cols="47"
+            cols="30"
             rows="3"
             placeholder="Special requests"
           ></textarea
           ><br />
-          <input type="submit" id="submit" value="Go To Checkout" />
+          <input
+            type="submit"
+            id="submit"
+            value="Go To Checkout"
+            aria-label="Submit order and go to checkout"
+          />
         </form>
       </section>
     </main>
