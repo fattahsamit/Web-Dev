@@ -30,8 +30,14 @@
       nav {
         display: flex;
         justify-content: space-around;
-        color: #ff4500;
         align-items: center;
+        background-color: #ff4500;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 10px 0;
       }
       nav img {
         width: 100px;
@@ -52,11 +58,17 @@
         text-decoration: none;
         color: #333;
       }
+      #banner {
+        margin-top: 200px;
+      }
       section {
         width: 70%;
         margin: 80px auto;
         font-size: x-large;
         text-align: center;
+      }
+      section h2 {
+        color: #ff4500;
       }
       hr {
         width: 60%;
@@ -68,11 +80,12 @@
         font-size: medium;
       }
       .menu-card {
+        background-color: #f7fbff;
         text-align: left;
         border-radius: 10px;
         padding: 10px 20px;
         font-size: medium;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
       .menu-image {
         text-align: center;
@@ -88,6 +101,7 @@
         text-align: start;
       }
       #order-form form input {
+        font-size: large;
         padding: 10px;
         border: 1px dotted #333;
         border-radius: 8px;
@@ -99,6 +113,7 @@
       }
       #sides {
         display: flex;
+        align-items: center;
         gap: 15px;
       }
       input[type="checkbox"] {
@@ -111,6 +126,7 @@
       }
       #submit {
         background-color: #ff4500;
+        color: white;
         width: 100%;
         font-size: large;
         font-weight: bold;
@@ -124,10 +140,17 @@
 
       /* Mobile Responsiveness */
       @media (max-width: 768px) {
+        section {
+          width: 80%;
+          font-size: large;
+        }
         #menu-card-container {
           grid-template-columns: 1fr;
         }
         #order-form {
+          width: 80%;
+        }
+        hr {
           width: 80%;
         }
       }
@@ -155,7 +178,7 @@
           The Krusty Krab 🦀 is a fictional fast food restaurant in the American
           animated television series SpongeBob SquarePants. In the television
           show the restaurant is famous for its signature burger, the Krabby
-          Patty 🍔, the formula to which is a closely guarded trade secret.
+          Patty 🍔
         </article>
       </section>
     </header>
