@@ -15,14 +15,15 @@
   box-sizing: border-box;
 }
 
-body {
+header,
+main {
   width: 60%;
   margin: auto;
-  background-image: url("https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif");
 }
 
 nav {
   position: fixed;
+  background-color: transparent;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
@@ -32,6 +33,7 @@ nav {
 
 nav > ul {
   display: flex;
+  background-color: transparent;
   flex-direction: column;
   gap: 30px;
   list-style: none;
@@ -41,6 +43,7 @@ nav > ul {
 
 nav li {
   border: 2px solid #7ab2d3;
+  background-color: transparent;
   border-radius: 10px;
   padding: 10px 50px;
   text-align: center;
@@ -48,6 +51,7 @@ nav li {
 
 section > h1 {
   text-align: center;
+  margin: 40px 0;
 }
 
 #about {
@@ -87,17 +91,60 @@ article > p {
 }
 
 .project-card {
-  width: 75%;
+  border: 1px solid #4a628a;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .project-card > img {
   max-width: 300px;
   border-radius: 20px;
 }
+.project-card > p {
+  width: 50%;
+}
+.project-card > div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-card button {
+  font-size: medium;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+#contact {
+  text-align: center;
+  margin: 120px 0;
+}
+
+form {
+  margin: 60px 0;
+}
+
+form > input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+}
+input[type="submit"] {
+  background-color: #4a628a;
+  color: #dff2eb;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 5px 0;
+}
 
 footer,
 footer > p {
-  width: 100%;
   color: #dff2eb;
   background-color: #4a628a;
   text-align: center;
