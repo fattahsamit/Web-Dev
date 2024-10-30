@@ -124,7 +124,7 @@ article > p {
 
 #contact {
   text-align: center;
-  margin: 120px 0;
+  margin: 100px 0;
 }
 
 form {
@@ -153,7 +153,7 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 footer,
@@ -205,6 +205,6 @@ footer > p {
     margin: 2px 0;
   }
   #contact {
-    margin: 10px 0;
+    margin: 16px 0;
   }
 }
