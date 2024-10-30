@@ -60,6 +60,7 @@ section > h1 {
   text-shadow: 2px 2px #4a628a;
 }
 
+/* About */
 #about {
   height: 100vh;
   display: flex;
@@ -91,6 +92,7 @@ article > p {
   border-radius: 50%;
 }
 
+/* Project */
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -122,6 +124,7 @@ article > p {
   border-radius: 5px;
 }
 
+/* Contact */
 #contact {
   text-align: center;
   margin: 100px 0;
